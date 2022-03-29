@@ -45,10 +45,10 @@ void TApplication::recieve(QByteArray msg)
         case ROOT_REQUEST:
             p.findRoot();
             if (p.get_D() < 0){
-                s<<QString("No roots");
+                s+=QString("No roots");
             }
             else{
-                s<<QString("x1 = " + p.get_first_root()) + " x2 = " + QString(p.get_second_root());
+                s+=QString("x1 = " + p.get_first_root() + " x2 = " + p.get_second_root());
             }
 
             answer<<QString().setNum(PRINT_ROOT)<<s;

@@ -26,7 +26,6 @@ INCLUDEPATH += ../common
 
 SOURCES += main.cpp \
     application.cpp \
-    polinom.cpp \
     rational.cpp \
     ../common/communicator.cpp \
     ../common/common.cpp
@@ -34,7 +33,6 @@ SOURCES += main.cpp \
 HEADERS += \
     application.h \
     polinom.h \
-    number.h \
     rational.h \
     ../common/communicator.h \
     ../common/common.h
